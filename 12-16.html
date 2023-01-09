@@ -1,0 +1,402 @@
+<!doctype html>
+<html lang="zh">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap'); 
+      body{
+        font-family: 'Noto Sans TC', sans-serif;
+      }
+
+      .bg-cover{
+        background-position: center center;
+        background-size: cover;
+      }
+      .carousel-caption{
+        background: rgba(0, 0, 0, 0.3);
+        border-radius: 10px;
+        font-weight: bold;
+      }
+      .carousel-caption p{
+        font-weight: normal;
+      }
+      .s9-text{
+        background: rgba(0, 0, 0, 0.2);
+        color: #FFF;
+        padding: 15px;
+        border-radius: 5px;
+      }
+      .s10-text{
+        font-weight: 700;
+      }
+      @media screen and (max-width: 768px) {
+        .s-img{
+          right: 0;
+        }
+        .s-text{
+          background: rgba(0, 0, 0, 0.5);
+          color: #FFF;
+          z-index: 1;
+          padding: 15px 20px;
+        }
+      }
+      
+    </style>
+  </head>
+  <body>
+    <!-- ********段落一******** -->
+  	<section class="bg-secondary">
+  		<div class="container text-end text-white">
+  			<i class="fa-brands fa-square-facebook"></i>
+  			<i class="fa-brands fa-square-twitter"></i>
+  		</div>
+  	</section>
+
+    <!-- ********段落二******** -->
+    <section class="bg-dark">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <i class="fa-solid fa-cat text-white wow animate__heartBeat" data-wow-duration="1s" data-wow-delay="0s" data-wow-iteration="infinite"></i>
+
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">首頁</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">店貓介紹</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  其他服務
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">貓咪周邊</a></li>
+                  <li><a class="dropdown-item" href="#">公益捐款</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">其他分店</a></li>
+                </ul>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <button class="btn btn-info me-2" type="submit">登入</button>
+              <button class="btn btn-outline-info" type="submit">註冊</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </section>
+
+    <!-- ********段落三******** -->
+    <section>
+      <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+        </div>
+        <div class="carousel-inner">
+          <!-- 1 -->
+          <div class="carousel-item active bg-cover" style="background-image: url(images/cafe.jpg);height: 400px;">
+            
+            <div class="carousel-caption d-none d-md-block">
+              <h5>陪伴貓咪咖啡廳即將開幕</h5>
+              <p>隱匿在喧囂的城市中，成立於巷弄內的貓咪咖啡廳將於1/10開幕。</p>
+            </div>
+          </div>
+          <!-- 2 -->
+          <div class="carousel-item bg-cover" style="background-image: url(images/cat-cafe-2.jpg);height: 400px;">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>盡情地享受貓咪環繞</h5>
+              <p>歡迎所有人類拋開煩惱，以毛孩子們治癒自己。</p>
+            </div>
+          </div>
+          <!-- 3 -->
+          <div class="carousel-item bg-cover" style="background-image: url(images/cat-cafe-3.jpg);height: 400px;">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>品嘗美味的咖啡</h5>
+              <p>店內提供各式咖啡飲品與甜點，同時也供應麵包品項。</p>
+            </div>
+          </div>
+          <!-- 4 -->
+          <div class="carousel-item bg-cover" style="background-image: url(images/coffee.jpg);height: 400px;">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>用心製作每份餐點</h5>
+              <p>嚴選產地，保證每份餐點的原料來源及調味。</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
+
+    <!-- ********段落四******** -->
+    <section class="bg-info animate__fadeInLeft wow" data-wow-duration="3s" data-wow-delay="0s" data-wow-iteration="1">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 text-center my-3">
+            <i class="fa-solid fa-mug-saucer fa-6x text-secondary text-white"></i>
+            <h1 class="text-white">來杯咖啡</h1>
+            <p class="text-white d-none d-md-block">使用來自哥倫比亞的阿拉比卡咖啡豆，阿拉比卡的咖啡因大約介於0.9～1.2%；脂肪比羅巴斯塔多了60%；糖的含量則羅巴斯塔的2倍，因此阿拉比卡的味道相對較甜、較柔和且帶點酸味。</p>
+          </div>
+          <div class="col-md-4 text-center my-3">
+            <i class="fa-solid fa-cookie-bite fa-6x text-secondary text-white"></i>
+            <h1 class="text-white">供應甜品</h1>
+            <p class="text-white d-none d-md-block">除了各項咖啡外，也有為不喝咖啡的您準備茶類與拿鐵系列。同時供應各項甜點與麵包，搭配季節有不同產品，歡迎關注粉絲專頁追蹤詳情。</p>
+          </div>
+          <div class="col-md-4 text-center my-3">
+            <i class="fa-solid fa-hand-holding-heart fa-6x text-secondary text-white"></i>
+            <h1 class="text-white">支持公益</h1>
+            <p class="text-white d-none d-md-block">每月會將盈利的10%捐給流浪動物保護協會，支援每位浪浪找到屬於他們的家。同時店內也提供個動物保護協會的捐款方式，顧客也可以透過相關資訊捐款。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ********段落五******** -->
+      <section style="position: relative;">
+        <div class="row">
+          <div class="col-md-5 bg-cover s-img" style="background-image: url(./images/coffee.jpg);position: absolute;top: 0;bottom: 0;"></div>
+        </div>
+        <div class="container">
+          <div class="row justify-content-end my-3">
+            <div class="col-md-7 s-text">
+              <h2>線上菜單</h2>
+              <p>提供包含各項咖啡、飲品甜點等項目，每月更新季節限定。</p>
+              <a href="#" class="btn btn-outline-primary">點此查看</a>
+              <div class="row my-4">
+                <div class="col-md-6">
+                  <h2>12月冬季限定</h2>
+                  <ul>
+                    <li>草莓莉莉優格</li>
+                    <li>芝芝草莓</li>
+                    <li>芋頭鮮奶</li>
+                    <li>豪華草莓鬆餅套餐</li>
+                    <li>太妃布蕾可可脆片捲</li>
+                  </ul>
+                </div>
+                <div class="col-md-6">
+                  <h2>1月新品上市</h2>
+                  <ul>
+                    <li>黑船檸檬蛋糕</li>
+                    <li>草莓開心果生乳捲</li>
+                    <li>芋見雲朵蛋撻</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    <!-- ********段落六******** -->  
+    <section>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="d-flex">
+              <!-- 1 -->
+              <div class="align-self-center">
+                <i class="fa-solid fa-paw fa-5x me-3 text-danger"></i>
+              </div>
+              <div>
+                <h3 class="text-danger">寵物友善餐廳</h3>
+                <p>歡迎各位顧客帶著自家毛還一同前來，店內貓咪都親人親貓，有例外會進行隔離。</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- 2 -->
+          <div class="col-md-6">
+            <div class="d-flex">
+              <div class="align-self-center">
+                <i class="fa-solid fa-shield-cat fa-5x me-3 text-warning"></i>
+              </div>
+              <div>
+                <h3 class="text-warning">中途之家</h3>
+                <p>除店貓外，另有接收浪浪做為中途之家，名單都會公告在官網與店內布告欄，歡迎在品嘗咖啡的同時與喜歡的浪浪想處看看。</p>
+              </div>
+            </div>
+          </div>
+          <!-- 3 -->
+          <div class="col-md-6">
+            <div class="d-flex">
+              <div class="align-self-center">
+                <i class="fa-solid fa-seedling fa-5x me-3 text-success"></i>
+              </div>
+              <div>
+                <h3 class="text-success">產地保證</h3>
+                <p>每份餐點的原料都經過產地認證，告示於櫃檯及網頁，各位顧客可以安心食用。</p>
+              </div>
+            </div>
+          </div>
+          <!-- 4 -->
+          <div class="col-md-6">
+            <div class="d-flex">
+              <div class="align-self-center">
+                <i class="fa-solid fa-plate-wheat fa-5x me-3 text-success"></i>
+              </div>
+              <div>
+                <h3 class="text-success">有機食材</h3>
+                <p>提供無毒友善的環境食材，不只關懷浪浪。也追求顧客的健康與地球的環保，提供最天然美味的餐點。</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <hr>
+
+    <!-- ********段落七******** -->  
+    <section style="position: relative;">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-7 s-text">
+            <dl class="row">
+              <dt class="col-sm-3">店名</dt>
+              <dd class="col-sm-9">陪伴咖啡廳</dd>
+
+              <dt class="col-sm-3">聯絡方式</dt>
+              <dd class="col-sm-9">
+                <p>電話 (04)2222-3333</p>
+                <a href="#">http://accompanycoffee.com</a>
+              </dd>
+
+              <dt class="col-sm-3">地址</dt>
+              <dd class="col-sm-9">407台中市西屯區工業區一路100號</dd>
+
+              <dt class="col-sm-3 text-truncate">簡介</dt>
+              <dd class="col-sm-9">用一杯咖啡、一份甜點和一隻貓來溫暖自己吧。</dd>
+            </dl>
+          </div>
+        </div>
+      </div>
+
+      <div class="row justify-content-end">
+        <div class="col-md-5 bg-cover s-img" style="background-image: url(./images/cat-cafe-3.jpg);position: absolute;top: 0;bottom: 0;">
+        </div>
+      </div>
+    </section>
+
+    <!-- ********段落八******** --> 
+    <section class=" wow animate__fadeInRight" data-wow-duration="3s" data-wow-delay="0s" data-wow-iteration="1"">
+      <div class="row">
+        <div class="col-md-6">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12243.201476946764!2d120.61215643990612!3d24.1743427189369!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34693e048d342aa9%3A0x2b6f18a6783fa3b!2z5Yue5YuV6YOo5Yue5YuV5Yqb55m85bGV572y5Lit5b2w5oqV5YiG572y77yI6Ie65Lit6IG36KiT5bGA77yJ!5e0!3m2!1szh-TW!2stw!4v1671176685280!5m2!1szh-TW!2stw" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="col-md-6">
+          <h3 class="mt-2 me-2">預定位置</h3>
+          <div class="mb-3 me-3">
+            <label for="username">姓名</label>
+            <input type="text" class="form-control" id="username" name="username">
+          </div>
+          <div class="mb-3 me-3">
+            <label for="tel">電話</label>
+            <input type="text" class="form-control" id="tel" name="tel">
+          </div>
+          <div class="mb-3 me-3">
+            <label for="email">Email</label>
+            <input type="email" class="form-control" id="email" name="email">
+          </div>
+          <div class="mb-3 me-3">
+            <label for="num">人數</label>
+            <input type="number" min="1" max="50" class="form-control" id="num" name="num">
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+            <label class="form-check-label" for="flexRadioDefault1">
+              需要素食
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+            <label class="form-check-label" for="flexRadioDefault2">
+              不需要素食
+            </label>
+          </div>
+          <div class="text-end">
+            <a href="" class="btn btn-success">確認</a>
+            <a href="" class="btn btn-secondary me-3">取消</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ********段落九******** --> 
+    <section>
+      <div class="row">
+        <div class="col-md-6 bg-cover" style="background-image: url(./images/cafe6.jpg);">
+          <!-- 左 -->
+          <div class="row justify-content-end">
+            <div class="col-md-8 p-5">
+              <div class="s9-text">
+                <small class="text-danger">加入我們</small>
+                <h3>誠徵<span class="text-warning">服務員</span></h3>
+                <p>男性歲月詳細信息明白章節幽默本，你在品質一步更是教育恐怕只不過，億元職工主動或是點擊小區中文編輯學習專，女孩專家自己身體大眾過來違反現有一臉堅決措施一段時，兒子從來沒本週地下採訪的說就不突，基金意外。</p>
+                <a href="#" class="btn btn-outline-warning">了解更多</a>
+              </div>          
+            </div>
+          </div>
+        </div>
+
+        <!-- 右 -->
+        <div class="col-md-6 bg-cover" style="background-image: url(images/cafe4.jpg);">
+          <!-- 左 -->
+          <div class="row">
+            <div class="col-md-8 p-5">
+              <div class="s9-text">
+                <small class="text-danger">加入我們</small>
+                <h3>誠徵<span class="text-warning">咖啡師</span></h3>
+                <p>男性歲月詳細信息明白章節幽默本，你在品質一步更是教育恐怕只不過，億元職工主動或是點擊小區中文編輯學習專，女孩專家自己身體大眾過來違反現有一臉堅決措施一段時，兒子從來沒本週地下採訪的說就不突，基金意外。</p>
+                <a href="#" class="btn btn-outline-warning">了解更多</a>
+              </div>          
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ********段落十(footer)******** --> 
+    <section>
+      <div class="container">
+        <ul class="nav">
+          <li class="nav-item">
+            <a class="nav-link disabled">CopyRight by 跨平台 20221230</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link s10-text" href="#">捐款連結</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link s10-text" href="#">中途之家</a>
+          </li>
+
+        </ul>
+      </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+
+    <script src="js/wow.min.js"></script>
+    <script>
+      new WOW().init();
+    </script>
+  </body>
+</html>
